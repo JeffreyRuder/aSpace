@@ -8,6 +8,8 @@ import android.widget.Button;
 
 public class UserHomeActivity extends AppCompatActivity {
     private Button blogButton;
+    private Button friendsButton;
+    private Button musicButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +21,24 @@ public class UserHomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(UserHomeActivity.this, BlogActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        friendsButton = (Button) findViewById(R.id.friendsButton);
+        friendsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(UserHomeActivity.this, FriendsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        musicButton = (Button) findViewById(R.id.musicButton);
+        musicButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(UserHomeActivity.this, MusicActivity.class);
                 startActivity(intent);
             }
         });
