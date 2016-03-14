@@ -6,19 +6,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class UserHomeActivity extends AppCompatActivity {
-    private Button blogButton;
+public class BlogActivity extends AppCompatActivity {
+    private Button homeButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_user_home);
+        setContentView(R.layout.activity_blog);
 
-        blogButton = (Button) findViewById(R.id.blogButton);
-        blogButton.setOnClickListener(new View.OnClickListener() {
+        homeButton = (Button) findViewById(R.id.homeButton);
+        homeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(UserHomeActivity.this, BlogActivity.class);
+                Intent intent = new Intent(BlogActivity.this, UserHomeActivity.class);
                 startActivity(intent);
             }
         });

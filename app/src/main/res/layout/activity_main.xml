@@ -17,11 +17,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Welcome to aSpace"
+        android:id="@+id/mainTitle"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="70dp"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="30sp" />
+        android:textSize="55sp" />
 
     <Button
         android:layout_width="fill_parent"
@@ -31,6 +32,16 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:background="@color/colorAccent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="a social app . . . for people"
+        android:id="@+id/aboutUs"
+        android:layout_below="@+id/mainTitle"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp" />
 
 
 </RelativeLayout>
