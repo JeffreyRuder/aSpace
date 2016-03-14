@@ -15,130 +15,144 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
-        android:divider="@drawable/spacer"
-        android:showDividers="middle"
         >
 
-        <RelativeLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+        <Button
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:id="@+id/homeButton"
+            android:layout_row="20"
+            android:layout_column="0"
+            android:drawableTop="@drawable/ic_home_black_24dp"
+            android:padding="5dp"
+            android:background="@color/colorAccent"
+            android:layout_gravity="right"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="15dp"/>
 
-            <Button
-                android:layout_width="wrap_content"
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView2" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="LMYTFY"
-                android:id="@+id/karmaChameleon"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="0dp"
-                android:background="@color/colorAccent" />
+                android:divider="@drawable/spacer"
+                android:showDividers="middle"
+                >
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Karma Chameleon"
-                android:id="@+id/textView3"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="Culture Club"
-                android:id="@+id/textView4"
-                android:layout_below="@+id/textView3"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
-        </RelativeLayout>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LMYTFY"
+                        android:id="@+id/karmaChameleon"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="0dp"
+                        android:background="@color/colorAccent" />
 
-        <RelativeLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Karma Chameleon"
+                        android:id="@+id/textView3"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="LMYTFY"
-                android:id="@+id/backInTheUSSR"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="0dp"
-                android:background="@color/colorAccent" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Culture Club"
+                        android:id="@+id/textView4"
+                        android:layout_below="@+id/textView3"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Back in the USSR"
-                android:id="@+id/titleTextView"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="The Beatles"
-                android:id="@+id/contentTextView"
-                android:layout_below="@+id/titleTextView"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LMYTFY"
+                        android:id="@+id/backInTheUSSR"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="0dp"
+                        android:background="@color/colorAccent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Back in the USSR"
+                        android:id="@+id/titleTextView"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="The Beatles"
+                        android:id="@+id/contentTextView"
+                        android:layout_below="@+id/titleTextView"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
 
 
-        </RelativeLayout>
+                </RelativeLayout>
 
-        <RelativeLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="LMYTFY"
-                android:id="@+id/yellowSubmarine"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="0dp"
-                android:background="@color/colorAccent" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LMYTFY"
+                        android:id="@+id/yellowSubmarine"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="0dp"
+                        android:background="@color/colorAccent" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Yellow Submarine"
-                android:id="@+id/textView5"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Yellow Submarine"
+                        android:id="@+id/textView5"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="The Beatles"
-                android:id="@+id/textView6"
-                android:layout_below="@+id/textView5"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
-        </RelativeLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="The Beatles"
+                        android:id="@+id/textView6"
+                        android:layout_below="@+id/textView5"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
 
 
     </LinearLayout>
-
-    <Button
-        android:layout_width="77dp"
-        android:layout_height="wrap_content"
-        android:text="Home"
-        android:id="@+id/homeButton"
-        android:layout_row="20"
-        android:layout_column="0"
-        android:drawableTop="@drawable/ic_home_black_24dp"
-        android:padding="5dp"
-        android:background="@color/colorAccent"
-        android:layout_gravity="right"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>

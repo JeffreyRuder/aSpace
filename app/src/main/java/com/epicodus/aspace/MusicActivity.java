@@ -54,7 +54,7 @@ public class MusicActivity extends AppCompatActivity {
         homeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(BlogActivity.this, UserHomeActivity.class);
+                Intent intent = new Intent(MusicActivity.this, UserHomeActivity.class);
                 startActivity(intent);
             }
         });

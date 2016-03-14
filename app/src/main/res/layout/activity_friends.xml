@@ -15,290 +15,302 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
-        android:divider="@drawable/spacer"
-        android:showDividers="middle"
         >
 
-        <RelativeLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+        <Button
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:id="@+id/homeButton"
+            android:layout_row="20"
+            android:layout_column="0"
+            android:drawableTop="@drawable/ic_home_black_24dp"
+            android:padding="5dp"
+            android:background="@color/colorAccent"
+            android:layout_gravity="right"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="15dp"/>
 
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:id="@+id/myspaceTom"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="0dp"
-                android:src="@drawable/myspacetom" />
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView" >
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Tom Anderson"
-                android:id="@+id/textView3"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@drawable/spacer"
+                android:layout_marginRight="10dp"
+                android:showDividers="middle">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="Tom has 1 friend"
-                android:id="@+id/textView4"
-                android:layout_below="@+id/textView3"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
-        </RelativeLayout>
+                <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
 
-        <RelativeLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/myspaceTom"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="0dp"
+                            android:src="@drawable/myspacetom" />
 
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:id="@+id/craigDennis"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="0dp"
-                android:src="@drawable/craigdennis" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="Tom Anderson"
+                            android:id="@+id/textView3"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Craig Dennis"
-                android:id="@+id/titleTextView"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Tom has 1 friend"
+                            android:id="@+id/textView4"
+                            android:layout_below="@+id/textView3"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="Craig has 2,147,483,647 friends"
-                android:id="@+id/contentTextView"
-                android:layout_below="@+id/titleTextView"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
-        </RelativeLayout>
+                <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
 
-        <RelativeLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/craigDennis"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="0dp"
+                            android:src="@drawable/craigdennis" />
 
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:id="@+id/doge"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="0dp"
-                android:src="@drawable/doge" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="Craig Dennis"
+                            android:id="@+id/titleTextView"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Doge"
-                android:id="@+id/textView5"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Craig has 2,147,483,647 friends"
+                            android:id="@+id/contentTextView"
+                            android:layout_below="@+id/titleTextView"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="Wow such Friends much Meme"
-                android:id="@+id/textView6"
-                android:layout_below="@+id/textView5"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
-        </RelativeLayout>
+                <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
 
-        <RelativeLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/doge"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="0dp"
+                            android:src="@drawable/doge" />
 
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:id="@+id/doge"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="0dp"
-                android:src="@drawable/doge" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="Doge"
+                            android:id="@+id/textView5"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Doge"
-                android:id="@+id/textView5"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Wow such Friends much Meme"
+                            android:id="@+id/textView6"
+                            android:layout_below="@+id/textView5"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="Wow such Friends much Meme"
-                android:id="@+id/textView6"
-                android:layout_below="@+id/textView5"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
-        </RelativeLayout>
+                <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
 
-        <RelativeLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/grumpycat"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="0dp"
+                            android:src="@drawable/grumpycat" />
 
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:id="@+id/doge"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="0dp"
-                android:src="@drawable/doge" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="Grumpy Cat"
+                            android:id="@+id/textView5"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Doge"
-                android:id="@+id/textView5"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Grumpy has only complaints"
+                            android:id="@+id/textView6"
+                            android:layout_below="@+id/textView5"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="Wow such Friends much Meme"
-                android:id="@+id/textView6"
-                android:layout_below="@+id/textView5"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
-        </RelativeLayout>
+                <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
 
-        <RelativeLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/lilbub"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="0dp"
+                            android:src="@drawable/lilbub" />
 
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:id="@+id/doge"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="0dp"
-                android:src="@drawable/doge" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="Lil Bub"
+                            android:id="@+id/textView5"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Doge"
-                android:id="@+id/textView5"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Lil has 300,000 friends"
+                            android:id="@+id/textView6"
+                            android:layout_below="@+id/textView5"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="Wow such Friends much Meme"
-                android:id="@+id/textView6"
-                android:layout_below="@+id/textView5"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
-        </RelativeLayout>
+                <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
 
-        <RelativeLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/misaminnie"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="0dp"
+                            android:src="@drawable/misaminnie" />
 
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:id="@+id/doge"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="0dp"
-                android:src="@drawable/doge" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="Misa Minnie"
+                            android:id="@+id/textView5"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Doge"
-                android:id="@+id/textView5"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Smartest cutest puppy"
+                            android:id="@+id/textView6"
+                            android:layout_below="@+id/textView5"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="Wow such Friends much Meme"
-                android:id="@+id/textView6"
-                android:layout_below="@+id/textView5"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
-        </RelativeLayout>
+                <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
 
-        <RelativeLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/seagull"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="0dp"
+                            android:src="@drawable/stevenseagull" />
 
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:id="@+id/doge"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="0dp"
-                android:src="@drawable/doge" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="Steven Seagull"
+                            android:id="@+id/textView5"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Doge"
-                android:id="@+id/textView5"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Hi, I'm Steven, Steven Seagull"
+                            android:id="@+id/textView6"
+                            android:layout_below="@+id/textView5"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="Wow such Friends much Meme"
-                android:id="@+id/textView6"
-                android:layout_below="@+id/textView5"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
-        </RelativeLayout>
+                <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
 
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/orly"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="0dp"
+                            android:src="@drawable/orly_owl" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="Orly Owl"
+                            android:id="@+id/textView5"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Orly?"
+                            android:id="@+id/textView6"
+                            android:layout_below="@+id/textView5"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
 
     </LinearLayout>
-
-    <Button
-        android:layout_width="77dp"
-        android:layout_height="wrap_content"
-        android:text="Home"
-        android:id="@+id/homeButton"
-        android:layout_row="20"
-        android:layout_column="0"
-        android:drawableTop="@drawable/ic_home_black_24dp"
-        android:padding="5dp"
-        android:background="@color/colorAccent"
-        android:layout_gravity="right"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>

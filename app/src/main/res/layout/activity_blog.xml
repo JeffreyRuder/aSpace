@@ -15,56 +15,101 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
-        android:divider="@drawable/spacer"
-        android:showDividers="middle"
         >
 
-        <TextView
-            android:layout_width="wrap_content"
+        <Button
+            android:layout_width="77dp"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="This is the title of a blog post."
-            android:id="@+id/titleTextView"
-            />
+            android:text="Home"
+            android:id="@+id/homeButton"
+            android:layout_row="20"
+            android:layout_column="0"
+            android:drawableTop="@drawable/ic_home_black_24dp"
+            android:padding="5dp"
+            android:background="@color/colorAccent"
+            android:layout_gravity="right"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="15dp"/>
 
-        <TextView
-            android:layout_width="wrap_content"
+        <ScrollView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="This is the content of a blog post."
-            android:id="@+id/contentTextView"
-            />
+            android:id="@+id/scrollView3" >
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="This is the title of a blog post."
-            android:id="@+id/textView"
- />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/spacer"
+                android:showDividers="middle"
+                android:layout_marginRight="10dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="This is the content of a blog post."
-            android:id="@+id/textView2"
-            />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Social Media For the 90s"
+                        android:id="@+id/titleTextView"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="George Michael laboris velcro sneakers officia renting movies at a store. Umbro shorts Desert Storm TRL ex Geo Metro Wayne’s World. Tootsie Pop Eminem consequat Atlanta Summer Olympics minesweeper. Skidz and zubas light up sneakers Ross and Rachel Topanga. Maxin’ Teenage Mutant Ninja Turtles Beanie Babies cornrows Schindler’s List, polo shirts with popped collars nylon windbreaker minim scrunchies Giga Pets digital pets."                       android:layout_below="@id/titleTextView"
+                        android:id="@+id/contentTextView"/>
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Remember the 90s?"
+                        android:id="@+id/textView"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Charlotte Hornets sports utility vehicles ex Barbie I will always love you parting your hair down the middle. Pixar ut accent braids gettin’ jiggy wit it. Jagged Little Pill renting movies at a store valley girl PlayStation Natalie Imbruglia, Hush Puppies consequat Armageddon Zack Morris Goosebumps. Teenage Mutant Ninja Turtles LA Gear personal computer Moby. VHS tapes Free Willy my heart will go on Jonathan Taylor Thomas, cable modem Jurassic Park cargo pants scrunchies Korn."
+                        android:layout_below="@id/textView"
+                        android:id="@+id/textView2"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="The Dream of the 90s Is Alive in Portland"
+                        android:id="@+id/textView"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Laboris white Ford Bronco neon colors Clueless. Dotcom bubble chat rooms sup Chandler Bing Hush Puppies. Maze screensavers I don’t want no scrubs kicks baseball jacket Cory Matthews hip hop, officia Eminem Kool-Aid Man Mazda MPV Toy Story glow in the dark stickers. Skate tees fugiat PlayStation tempor Deep Blue hot pink. Nylon windbreaker Doug as if Snoop Dogg yo quiero Taco Bell. Biker shorts esse can’t touch this Good Will Hunting Sublime."
+                        android:layout_below="@id/textView"
+                        android:id="@+id/textView2"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
     </LinearLayout>
-
-    <Button
-        android:layout_width="77dp"
-        android:layout_height="wrap_content"
-        android:text="Home"
-        android:id="@+id/homeButton"
-        android:layout_row="20"
-        android:layout_column="0"
-        android:drawableTop="@drawable/ic_home_black_24dp"
-        android:padding="5dp"
-        android:background="@color/colorAccent"
-        android:layout_gravity="right"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
