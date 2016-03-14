@@ -13,7 +13,7 @@
         android:scaleType="centerCrop"
         android:alpha="0.3" />
 
-    <TextView
+    <com.epicodus.aspace.AmaticTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Welcome to aSpace"
@@ -33,7 +33,7 @@
         android:layout_centerHorizontal="true"
         android:background="@color/colorAccent" />
 
-    <TextView
+    <com.epicodus.aspace.AmaticTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="a social app . . . for people"
@@ -41,7 +41,7 @@
         android:layout_below="@+id/mainTitle"
         android:layout_centerHorizontal="true"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="30sp" />
+        android:textSize="35sp" />
 
 
 </RelativeLayout>

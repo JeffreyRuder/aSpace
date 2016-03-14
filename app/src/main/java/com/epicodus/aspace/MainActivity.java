@@ -17,13 +17,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView mainTitle = (TextView) findViewById(R.id.mainTitle);
-        TextView aboutUs = (TextView) findViewById(R.id.aboutUs);
-
-        Typeface amatic = Typeface.createFromAsset(getAssets(), "fonts/amatic.ttf");
-        mainTitle.setTypeface(amatic);
-        aboutUs.setTypeface(amatic);
-
         loginButton = (Button) findViewById(R.id.loginButton);
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override

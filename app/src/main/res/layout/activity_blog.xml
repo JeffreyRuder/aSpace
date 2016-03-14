@@ -10,33 +10,48 @@
     tools:context="com.epicodus.aspace.BlogActivity"
     android:background="@color/colorPrimaryLight">
 
-    <LinearLayout
+    <RelativeLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
         >
 
+        <com.epicodus.aspace.AmaticTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Blog"
+            android:id="@+id/textView8"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="50sp" />
+
         <Button
             android:layout_width="77dp"
             android:layout_height="wrap_content"
             android:text="Home"
             android:id="@+id/homeButton"
-            android:layout_row="20"
-            android:layout_column="0"
+
             android:drawableTop="@drawable/ic_home_black_24dp"
             android:padding="5dp"
             android:background="@color/colorAccent"
             android:layout_gravity="right"
-            android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginBottom="15dp"/>
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="0dp" />
 
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/scrollView3" >
+            android:id="@+id/scrollView3"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            android:layout_below="@+id/homeButton">
 
             <LinearLayout
                 android:orientation="vertical"
@@ -110,6 +125,6 @@
             </LinearLayout>
         </ScrollView>
 
-    </LinearLayout>
+    </RelativeLayout>
 
 </RelativeLayout>
