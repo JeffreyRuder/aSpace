@@ -10,39 +10,61 @@
     tools:context="com.epicodus.aspace.UserHomeActivity"
     android:background="@color/colorPrimaryLight">
 
-
-    <Button
+    <com.epicodus.aspace.AmaticTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Blog"
-        android:drawableTop="@drawable/ic_content_paste_black_24dp"
-        android:id="@+id/blogButton"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="my aSpace"
+        android:id="@+id/textView7"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:padding="5dp"
-        android:background="@color/colorAccent" />
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginBottom="20dp"
+        android:textSize="50sp"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Friends"
-        android:drawableTop="@drawable/ic_group_black_24dp"
-        android:id="@+id/friendsButton"
-        android:padding="5dp"
-        android:background="@color/colorAccent"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Music"
-        android:drawableTop="@drawable/ic_library_music_black_24dp"
-        android:id="@+id/musicButton"
-        android:padding="5dp"
-        android:background="@color/colorAccent"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blog"
+            android:drawableTop="@drawable/ic_content_paste_black_24dp"
+            android:id="@+id/blogButton"
+            android:padding="5dp"
+            android:background="@color/colorAccent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Music"
+            android:drawableTop="@drawable/ic_library_music_black_24dp"
+            android:id="@+id/musicButton"
+            android:padding="5dp"
+            android:background="@color/colorAccent"
+            android:layout_alignTop="@+id/friendsButton"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Friends"
+            android:drawableTop="@drawable/ic_group_black_24dp"
+            android:id="@+id/friendsButton"
+            android:padding="5dp"
+            android:background="@color/colorAccent"
+            android:layout_alignTop="@+id/blogButton"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
 </RelativeLayout>
